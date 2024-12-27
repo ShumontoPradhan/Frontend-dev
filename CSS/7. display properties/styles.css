@@ -1,0 +1,42 @@
+* {
+    /* border: 1px solid red; red colour ka solid box show karega every element k liyea */
+    border: 1px ;
+    margin: 0;   
+    padding: 0;  /*page k corners tak occupy krenge*/
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    display: inline;  /*block elements ko inline lane k liyea*/
+    width: 50%;
+}
+a {
+    width: 400px; /* no effect because inline element ,but we can make it block*/
+    display: inline-block; /*now can be changed*/
+}
+
+img {
+    
+    width: 200px;
+}
+
+ul {
+    list-style: none;
+    text-align: right;
+    padding: 30px;  /* thoda space chodne k liyea from the corner of page*/
+    background-color: rgb(9, 10, 2);
+    color: white;
+}
+
+li {
+    display: inline;
+    padding: 20px; /*gap between each li element*/
+}
+
+li:hover {
+    color: purple;
+    cursor: pointer;
+}

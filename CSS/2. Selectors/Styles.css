@@ -1,0 +1,34 @@
+/* * {
+    font-family: fantasy;
+} */
+
+body {
+    font-size: 24px;
+}
+
+p:hover {
+    font-family: monospace;      /*  jab pointer paragraph k upar loge tab font change ho jayega paragraph ka kyunki p: hover likha hai */
+}
+
+/* #first>p {
+    color: green;
+} */
+
+#first, #second, #third{     /*id selector*/
+    color: red;             /*tino ka colour red*/
+}
+
+#second {
+    color: blue;           /*second ka blue*/
+}
+
+.purple {
+    color: green;                      /*class selector----colour unchanged because it has least priority*/
+    /* font-family: monospace; */
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bolder;
+    font-style: italic;                  /*   priority----id > class > element     */
+}

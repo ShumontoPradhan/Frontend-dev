@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: "Lato", sans-serif ;
+}
+
+.outer-box {
+    width:100%;
+    height:100vh;
+    background: linear-gradient(to top left , rgb(92, 10, 114) , skyblue);  /*blue colour se suru karo aur sky blue colour ke sath top left  pe pohoncho*/
+}
+
+.inner-box {
+    width: 400px;
+    margin: 0 auto; /*upar chipke raho ,par left aur right auto karne par apne aap bich me ajeyega*/
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);  /*jitna box ka size hai utna zagah uper chodke occupy karega in y axis*/
+    padding: 20px 40px ;
+    background: linear-gradient(to top left, #ffffffff, #ffffff33);
+    border-radius: 8px;   /*thora round rarne k liyea*/
+    box-shadow: 2px 2px 2px rgb(11, 11, 11); /*  right,left,blur,color */
+    z-index: 2;
+
+}
+
+.signup-header h1 {
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.signup-header p {
+    font-size: 0.8rem;
+    color: #5e2399;
+}
+
+.signup-body {
+    margin: 20px 0px ;
+}
+
+.signup-body p{
+    margin: 10px 0px;
+}
+
+.signup-body p label {
+    display: block; /*name, username@gmail.om , Atleast 8 char  will come down*/
+    font-weight: bold;
+}
+
+.signup-body p input{
+    width: 100%;  /*sare input wale jagah aur create acc  wala button lamba ho gayega*/
+    padding: 10px;
+    border: 2px solid #cccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 4px; /*thoda uppar uth gaya */
+}
+
+.signup-body p input[type="submit"] {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.signup-body p input[type="submit"]:hover {
+    background-color: #0d4f7c;
+}
+
+
+.signup-footer p {
+    color: #555;
+    text-align: center;
+}
+
+.signup-footer p a {
+    color:#3498db ;
+}
+
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background: linear-gradient(to right, #ffffff33, #ffffffff);  /*transparent bana dega*/
+    backdrop-filter: blur(8px) ;
+    position: absolute;
+}
+
+.c1 {
+    height: 75px;
+    width: 75px;
+    background: linear-gradient(to left, #abe7ec, rgb(209, 198, 220));
+    top: 100px;
+    left: 20px;
+}
+
+.c2 {
+    bottom: 200px;
+    right: 50px;
+}

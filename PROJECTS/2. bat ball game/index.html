@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket game</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bar Ball Stump Game</h1>
+    <button onclick="
+    const userchoiceMessage;
+    let randomNumber = Math.random() * 3;
+    let computerChoice;
+    if(randomNumber > 0 && randomNumber <=1){
+        computerChoice = 'Bat';
+        // console.log('computer choice is bat');
+    } else if(randomNumber > 1 && randomNumber <= 2){
+        computerChoice = 'Ball';
+        // console.log('computer choice is ball');
+    } else {
+        computerChoice = 'Stump';
+        // console.log('computer choice is stump');
+    }
+    const computerChoiceMessage = `computer choice is ${computerChoice}`;
+
+let resultMessage;
+    if (computerChoice === 'Ball'){
+        resultMessage = 'user won!';
+    }else if(computerChoice === 'Stump'){
+        resultMessage = 'computer won!';
+    }else {
+        resultMessage = 'draw';
+    }
+
+    alert(`you have chosen bat. Computer choice is ${computerChoice}  and result is ${resultMessage}`)
+
+        ">Bat</button>
+
+
+
+    <button onclick="
+        console.log('you have chosen ball');
+         let randomNumber = Math.random() * 3;
+    if(randomNumber > 0 && randomNumber <=1){
+        let computerChoice = 'Bat';
+        console.log('computer choice is bat')
+    } else if(randomNumber > 1 && randomNumber <= 2){
+        computerChoice = 'Ball';
+        console.log('computer choice is ball')
+    } else {
+        computerChoice = 'Stump';
+        console.log('computer choice is stump');
+    }
+        ">Ball</button>
+
+
+    <button onclick="
+    console.log('you have chosen stump');
+     let randomNumber = Math.random() * 3;
+if(randomNumber > 0 && randomNumber <=1){
+    let computerChoice = 'Bat';
+    console.log('computer choice is bat')
+} else if(randomNumber > 1 && randomNumber <= 2){
+    computerChoice = 'Ball';
+    console.log('computer choice is ball')
+} else {
+    computerChoice = 'Stump';
+    console.log('computer choice is stump');
+}
+    ">Stump</button>
+
+
+
+<h4 style="color: burlywood;">open console to play</h4>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');   /*font from google fonts*/
+* {
+      font-family: 'Silkscreen', Verdana, Geneva;
+}
+h1 {
+        color: black;
+        /* background-color: pink; */
+        text-align: center;
+
+        text-decoration: underline;
+        /* text-decoration-line: line-through; */
+        text-decoration-color: rgb(150, 232, 100);
+        text-decoration-style: wavy;
+        text-transform: uppercase;
+
+        /* color: transparent;                        //blur text
+        text-shadow: 4px 4px 10px black; */
+        
+        text-shadow: 4px 4px 1px red , 5px 5px 1px blue ;   /*  x-axis , y-axis, blur, colour      ,     double shadow */
+}
+
+p {
+    text-align: center;
+    font-family: 'Times New Roman', monospace, fantasy ;  /* agar first wala nahi mila to send mai jao agar phir nahi mila to third me */
+    font-size: 1.2rem;
+    font-weight: 400 ;  /*bold*/
+    font-style: italic;
+}
+
+
+/* use google fonts for searching fonts */

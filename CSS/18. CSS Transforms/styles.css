@@ -1,0 +1,30 @@
+.container {
+    width: 400px;
+    height: 400px;
+    margin: 80px auto;
+    background-color: steelblue;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: scaleX(2) scaleY(4) scaleZ(3); */
+  /* transform:scale(2, 1.5) ;  x direction nmai 2 aur y direction mai 1.5 times width ko multiply ho jayega */
+  /* transform: skew(0deg , 40deg);  tedha karne k liyea */
+  /* transform: translate(50% , 50%);  simillar to padding */
+  /* transform: rotate(180deg); */
+
+  /* transform: rotate(45deg) scale(1.2) skew(30deg) translate(45px); */
+  /* transform: rotate(45deg); */
+  transform-origin: 0% 0%;
+  transition: 0.5s ease;
+}
+
+.box:hover {
+    transform: rotate(45deg);
+}

@@ -1,0 +1,20 @@
+main {
+    border: 5px solid brown ;   /*try dotted*/
+    /* width: 50%; */
+    width: 25vw;
+}
+h1 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 2em;
+}
+p {
+    font-size: 1.50rem;
+}
+
+section {
+    border: 5px dashed green;
+    width: 50vw;     /*view width*/
+    height: 20vh;   /*view height*/
+}

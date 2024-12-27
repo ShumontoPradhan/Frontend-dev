@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage</title>
+</head>
+<body>
+    <script>
+        let product = {
+            name: 'tshirt',
+            price: 345,
+            rating: {
+                stars: 4.5,
+                noOfReviews: 342,      
+            }
+        };
+        // console.log(typeof product);
+        // console.log(product);
+        // let str = JSON.stringify(product);  //json.stringfy converts the object into string
+        // console.log(typeof str);
+        // console.log(str);
+
+
+        // let newProduct = JSON.parse(str); //json.parse converts the string into object
+        // console.log(typeof str);
+        // console.log(str);
+
+        localStorage.setItem('name', 'shumonto');
+        localStorage.setItem('price', '3839');  //even if i comment the above two lines it will still print name as it is saved in local storage now
+        console.log(localStorage.getItem('name'));
+        localStorage.setItem('product', product);  //it will save random value
+        localStorage.setItem('product', JSON.stringify(product));       
+        let product2 = JSON.parse(localStorage.getItem('product'));
+        console.log(product);
+        console.log(product2)  ;
+
+        localStorage.removeItem('price');  //remove item
+        localStorage.clear();
+   </script>
+</body>
+</html>

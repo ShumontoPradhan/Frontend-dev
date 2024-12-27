@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bar Ball Stump Game</h1>
+
+    <button onclick="
+    let computerChoice = generateComputerChoice();
+
+    let resultMessage;
+    if (computerChoice === 'Ball'){
+        resultMessage = 'user won!';
+    } else if(computerChoice === 'Stump'){
+        resultMessage = 'computer won!';
+    } else {
+        resultMessage = 'draw';
+    }
+
+    alert(`You have chosen Bat. Computer choice is ${computerChoice}, and result is ${resultMessage}`);
+    ">Bat</button>
+
+    <button onclick="
+    computerChoice = generateComputerChoice();
+
+    let resultMessage;
+    if (computerChoice === 'Stump'){
+        resultMessage = 'user won!';
+    } else if(computerChoice === 'Bat'){
+        resultMessage = 'computer won!';
+    } else {
+        resultMessage = 'draw';
+    }
+
+    alert(`You have chosen Ball. Computer choice is ${computerChoice}, and result is ${resultMessage}`);
+    ">Ball</button>
+
+    <button onclick="
+   computerChoice = generateComputerChoice();
+
+    let resultMessage;
+    if (computerChoice === 'Bat'){
+        resultMessage = 'user won!';
+    } else if(computerChoice === 'Ball'){
+        resultMessage = 'computer won!';
+    } else {
+        resultMessage = 'draw';
+    }
+
+    alert(`You have chosen Stump. Computer choice is ${computerChoice}, and result is ${resultMessage}`);
+    ">Stump</button>
+
+    <h4 style="color: burlywood;">Open console to play</h4>
+     
+
+    <script>
+   function generateComputerChoice() {
+        // let computerChoice;
+        let randomNumber = Math.random() * 3;
+      if(randomNumber > 0 && randomNumber <= 1){
+          return 'Bat';
+      } else if(randomNumber > 1 && randomNumber <= 2){
+          return 'Ball';
+      } else {
+          return 'Stump';
+      }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+.container {
+    width: 300px;
+    height: 300px;
+    background-color: gainsboro;
+    margin: 200px;
+ /* position: relative; */  /* agar reletive kar diya to green box bhi page k top left pe nahi jayega container ke top left pe jayega*/
+}
+
+body {
+    color: white;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: gainsboro;
+}
+
+.red {
+    background-color: red;  
+    position: relative;
+    top: 50px;             /* top se 50px nichey */
+    /* left: 50px;          left se 50px right */
+    right: 50px;          /*100px left side(out of the container)*/
+    z-index: 1;   /*red and purble ovrlapped so whose z index is high that colour will be shown*/
+                  /*usually childerns ,parents k uppar atey hai*/
+}
+
+.green {
+    background-color: green;  
+    position: absolute;
+    top: 0;  /* pura uppar chala jayega green box*/
+    left: 0; /* pura left chala jayega green box*/
+     /* bottom: 0;
+        right: 0; */
+
+}
+
+.blue {
+    background-color: blue;  
+    position: fixed;              /*while scrolling blue box will remain in the screen at the same place*/
+    bottom: 50%;   /*middle me ajayega*/
+    right: 0;    /*right side chala jayega*/
+}
+
+.purple {
+    background-color: purple;
+    position: sticky;   
+    top: 100px;   /*nichey ata rahega when i scroll but only upto 100px*/
+    z-index: 2;
+}
+
+.spacer {
+    height: 300vh;  /*to make page longer..scroll-able)*/
+}
